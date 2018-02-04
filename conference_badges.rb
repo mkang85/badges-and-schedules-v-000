@@ -21,3 +21,14 @@ def assign_rooms(arr)
   end
   return newArr
 end
+
+def printer(arr)
+  newArr = batch_badge_creator(arr)
+  newArr2 = assign_rooms(arr)
+  newArr.each do |ele|
+    puts ele
+  end
+  newArr2.each do|ele|
+    puts ele
+  end
+end
