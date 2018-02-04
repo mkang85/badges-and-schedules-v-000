@@ -16,7 +16,7 @@ end
 
 def assign_rooms(arr)
   newArr = []
-  arr.each do |ele|
+  arr.each_with_index do |ele, index|
     newArr << "Hello, #{ele}! You'll be assigned to room #{index}!"
   end
   return newArr
